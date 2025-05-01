@@ -72,7 +72,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-
+            {/* About area */}
             <div className='about-area'>
                 <div className='container'>
                     <div className='row align-items-center'>
@@ -103,6 +103,32 @@ function Home() {
 
                 </div>
 
+            </div>
+
+            {/* It services */}
+
+            <div className="service-area">
+                <div className="container">
+                    <div className="row align-items-center">
+
+                    <div className="col-lg-12">
+                    <div className='hero-content text-center service-title'>
+                                <h5>SN-Tech Studio</h5>
+                                <h1 style={{color:'#000',fontSize:'42px',fontWeight:'700'}}>How Professional IT Services <br /> <span style={{color:'#de4026'}}> Can Drive Success.</span></h1>
+                               
+
+
+                            </div>
+
+                    </div>
+
+                  <div className="col-xl-3"></div>
+                  <div className="col-xl-3"></div>
+                  <div className="col-xl-3"></div>
+
+                    </div>
+                   
+                </div>
             </div>
         </>
     )

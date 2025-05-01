@@ -113,3 +113,14 @@ p.featured-text {
     color: #fff;
 }
 
+.service-single-box{
+    background: #ffff;
+    border-radius: 15px;
+    padding: 45px 35px 42px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+.service-icon{
+    margin-bottom: 33px;
+}
