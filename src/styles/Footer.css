@@ -1,0 +1,274 @@
+.footer-area{
+    background-image: url('../assets/footer-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 50px 35px;
+}
+.address-area {
+    background: #db3c1c;
+    margin: 0 50px 0;
+    padding: 25px 0 25px;
+    border-radius: 40px 40px 0 0;
+}
+.address-icon {
+    position: relative;
+    z-index: 1;
+    margin-right: 41px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.address-icon::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 2px dashed #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    animation-name: rotateme;
+    animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+@keyframes rotateme {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+    
+}
+
+.address-box{
+    display: flex;
+    align-items: center;
+}
+.address-title h3 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0;
+}
+.address-box2{
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.address-area .solutek-btn a {
+    display: inline-block;
+    background: #045c9c;
+    text-decoration: none;
+    padding: 16px 28px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Poppins";
+    transition: 0.5s;
+}
+.address-area .solutek-btn a:hover {
+    color: #db3c1c;
+}
+.address-area .solutek-hover-btn {
+    background-color: #ffff;
+}
+.solutek-btn a:hover .solutek-hover-btn {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.hover-bx {
+    left: 0;
+    -webkit-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+    border-radius: 30px 0 0px 30px;
+}
+
+.hover-bx2 {
+    left: 25%;
+    -webkit-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+}
+.hover-bx3 {
+    left: 50%;
+    -webkit-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+}
+.hover-bx4 {
+    left: 75%;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    border-radius: 0 30px 30px 0;
+}
+.solutek-hover-btn {
+    background-color: #045c9c;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 25%;
+    z-index: -1;
+}
+.row.footer {
+    padding: 118px 0 101px;
+}
+.widget-title h2 {
+    font-size: 22px;
+    line-height: 41px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 31px;
+}
+p.footer-widget-text {
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0;
+    padding: 38px 0 68px;
+}
+ul{
+    list-style-type: none;
+}
+.footer-widget.left ul li a {
+    display: inline-block;
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family: "Fira Sans";
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    transition: 0.5s;
+    list-style-type: none;
+}
+.footer-widget.left ul li a:hover{
+    color: #db3c1c;
+}
+.footer-widget.left ul li a:hover::before {
+    width: 100%;
+
+}
+.footer-widget.left ul li a::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0px;
+    bottom: 10px;
+    background: #db3c1c;
+    transition: 0.5s;
+}
+p.newsletter-text {
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family: "Fira Sans";
+    margin: 0px;
+    padding: 0px 0px 38px;
+}
+.form-field2 input {
+    width: 79%;
+    height: 56px;
+    background-color: rgb(22, 26, 43);
+    font-size: 15px;
+    line-height: 26px;
+    color: rgb(122, 122, 122);
+    font-weight: 400;
+    font-family: "Fira Sans";
+    outline: 0px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0px 21px;
+}
+.form-field2 button {
+    color: rgb(255, 255, 255);
+    width: 65px;
+    height: 56px;
+    background-color: #db3c1c;
+    font-size: 22px;
+    margin-left: -4px;
+    position: relative;
+    top: 2px;
+    border: none;
+    outline: 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+.-copyright-text{
+    color: rgb(122, 122, 122);
+}
+.row.copyright {
+    border-top: 1px solid rgb(28, 32, 48);
+    padding: 29px 0px 0px;
+}
+.copyright-list {
+    text-align: right;
+}
+.copyright-list ul{
+    display: flex;
+    justify-content: end;
+}
+.copyright-list ul li a {
+    display: inline;
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-left: 37px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+@media only screen and (max-width:600px){
+
+
+.address-title h3 {
+    font-size: 13px !important;
+}
+.address-area .solutek-btn a {
+    font-size: 13px !important;
+    float: left;
+    padding: 15px 26px;
+}
+.footer-area{
+
+    margin: 0 !important;
+}
+.address-area {
+    padding: 10px !important;
+    margin: 0 !important;
+}
+.-copyright-text {
+    text-align: center;
+}
+    
+}

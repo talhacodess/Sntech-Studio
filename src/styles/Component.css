@@ -1,0 +1,115 @@
+.featured-single-box{
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    padding: 36px 0 32px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: 0.5s
+}
+
+.featured-single-box:hover{
+
+    border: 1px solid #ff4208;
+}
+.featured-single-box::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url('../assets/feature.png');
+    left: -17%;
+    top: -3%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.featured-single-box:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    z-index: -1;
+    background: url('../assets/feature7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    right: 0;
+    bottom: 0;
+    transform: perspective(500px) rotateX(-90deg);
+    opacity: 0;
+}
+.featured-single-box:hover:after {
+    transform: perspective(500px) rotateX(0deg);
+    opacity: 1;
+}
+.featured-single-box:hover .featured-icon img {
+    filter: brightness(0) invert(1);
+}
+.featured-icon img {
+    transition: 0.5s;
+    filter: brightness(1) invert(0);
+}
+.featured-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 38px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid #ffffff;
+    line-height: 70px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.featured-icon::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #171a2b;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+h3.featured-title {
+    font-size: 18px;
+    color: #050a1e;
+    font-weight: 600;
+    padding: 16px 0 6px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+p.featured-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #7a7a7a;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.featured-icon::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #171a2b;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.featured-single-box:hover .featured-icon::before{
+    transform: scale(1);
+}
+.featured-single-box:hover h3.featured-title,.featured-single-box:hover p.featured-text{
+    color: #fff;
+}
+

@@ -1,0 +1,209 @@
+.hero-area{
+    background-image: url('../assets/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
+    border-radius: 40px 40px 0 0;
+    height: 850px;
+    margin: 0 50px;
+
+}
+.hero-content h5 {
+    font-size: 16px;
+    color: rgb(255, 60, 0);
+    font-weight: 600;
+    font-family: Poppins;
+    background-color: rgb(22, 26, 43);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    line-height: 25px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(64, 70, 93);
+    border-image: initial;
+    padding: 6px 28px;
+    margin: 0px 0px 20px;
+}
+.hero-content h5::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 7px;
+    left: -8%;
+    top: 14px;
+    background: rgb(255, 61, 0);
+    border-radius: 30px;
+}
+.hero-content h1 {
+    font-size: 55px;
+    line-height: 70px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-family: Poppins;
+    margin: 0px;
+}
+.solutek-btn a {
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    background: #db3c1c;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.hero-video-icon a{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: relative;
+    top: 6px;
+    margin-left: 39px;
+    z-index: 1;
+    background: rgb(255, 61, 0);
+    border-radius: 50%;
+}
+.hero-video-icon s span {
+    display: inline-block;
+    opacity: 0.702;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family: "Fira Sans";
+    margin-left: 32px;
+    text-decoration: underline;
+}
+.hero-video-icon a::after {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 80px;
+    left: -12px;
+    top: -13px;
+    z-index: -1;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(64, 70, 93);
+    border-image: initial;
+}
+.hero-content p {
+    opacity: 0.702;
+    font-size: 19px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-family: "Fira Sans";
+    width: 91%;
+    margin: 0px;
+    padding: 13px 0px 43px;
+}
+.hero-thumb {
+    text-align: right;
+    margin-top: 118px;
+    position: relative;
+    z-index: 1;
+}
+.hero-thumb::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    right: -10%;
+    top: -25%;
+    animation-name: rotateme;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: url('../assets/hero-shape.png') no-repeat;
+    background-position: center center;
+}
+@keyframes rotateme {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+    
+}
+
+.featured-area{
+    padding: 0 0 88px;
+    margin-top: -60px;
+}
+.featured-box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+}
+.about-area {
+    padding: 0 0 120px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.about-area::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url('../assets/about5.png');
+    background-repeat: no-repeat;
+    right: -72%;
+    top: -8%;
+    
+}
+
+.about-thumb {
+    position: relative;
+    z-index: 1;
+    margin-left: -96px;
+}
+.about-shape{
+    position: absolute;
+    top: 20%;
+    right: 44%;
+}
+h4.about-title {
+    position: absolute;
+    bottom: 18%;
+    font-size: 20px;
+    line-height: 75px;
+    color: #ffffff;
+    font-weight: 600;
+    left: 12%;
+    margin: 0;
+}
+.about-shape img{
+    animation: dancer 3s alternate infinite;
+}
+@keyframes dancer {
+
+    0%{
+        -webkit-transform: scale(0.5);
+    }
+    100%{
+        -webkit-transform: scale(1.2);
+    }
+    
+}
