@@ -141,6 +141,12 @@ function Home() {
                    
                 </div>
             </div>
+
+            {/** Resent Project*/}
+            <div className='project-area'>
+                
+
+            </div>
         </>
     )
 

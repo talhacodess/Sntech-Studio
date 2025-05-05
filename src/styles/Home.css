@@ -217,3 +217,11 @@ h4.about-title {
     z-index: 1;
     overflow: hidden;    
 }
+
+.project-area {
+    padding: 120px 0 88px;
+    background: url('../assets/project-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
