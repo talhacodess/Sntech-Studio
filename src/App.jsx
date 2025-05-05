@@ -2,6 +2,8 @@ import './App.css'
 import Header from './header/header'
 import Footer from './footer/Footer'
 import Home from './pages/home/Home'
+import { Route, Routes } from 'react-router'
+
 
 function App() {
 
@@ -9,7 +11,11 @@ function App() {
     <>
      <div>
       <Header/>
-      <Home/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+     
+       </Routes>
+   
       <Footer/>
      
      </div>

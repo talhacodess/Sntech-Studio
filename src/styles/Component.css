@@ -113,14 +113,83 @@ p.featured-text {
     color: #fff;
 }
 
-.service-single-box{
-    background: #ffff;
-    border-radius: 15px;
-    padding: 45px 35px 42px;
+
+.service-single-box {
     position: relative;
     z-index: 1;
     margin-bottom: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 45px 35px 42px;
+    border-radius: 20px;
 }
 .service-icon{
     margin-bottom: 33px;
+}
+.service-icon img {
+    filter: brightness(1) invert(0);
+    transition: 0.5s;
+}
+
+
+.service-title {
+    margin: 0 0 45px;
+}
+.service-single-box::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    clip-path: polygon(50% 0px, 50% 0px, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+    background: url('../assets/service6.png') center center / cover no-repeat;
+    background-position: center center;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+.service-single-box:hover::before {
+    clip-path: polygon(25% -70%, 75% -70%, 120% 50%, 75% 170%, 25% 170%, -20% 50%);
+}
+h3.service-title {
+    font-size: 22px;
+    color: #050a1e;
+    font-weight: 600;
+    font-family: Poppins;
+    cursor: pointer;
+    margin: 0px;
+    transition: 0.5s;
+}
+.service-single-box:hover p.service-text,.service-single-box:hover h3.service-title  {
+    color: rgb(255, 255, 255);
+}
+p.service-text {
+    margin: 0px;
+    padding: 11px 0px 38px;
+    transition: 0.5s;
+}
+.service-btn a {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-decoration: none;
+}
+.service-btn svg {
+    display: inline-block;
+    color: #ff3c00;
+    background: #f4f4f4;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 11px;
+    transition: 0.5s;
+}
+.service-single-box:hover .service-icon img {
+    filter: brightness(0) invert(1);
+    transition: 0.5s;
 }

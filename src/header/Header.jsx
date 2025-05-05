@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../assets/sn-logo.png'
 import { FaArrowRightLong } from "react-icons/fa6";
 import '../styles/Header.css'
+import { Link } from 'react-router';
 
 
 function Header() {
@@ -17,7 +18,7 @@ function Header() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+         <Link to={"/"}> <a class="nav-link active" aria-current="page" href="#">Home</a></Link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>

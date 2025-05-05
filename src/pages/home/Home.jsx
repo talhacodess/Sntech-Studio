@@ -10,6 +10,8 @@ import feature4 from '../../assets/feature4.png'
 import feature5 from '../../assets/feature5.png' 
 import aboutus from '../../assets/about-thumb.png' 
 import shape from '../../assets/about1.png' 
+import services1 from '../../assets/service1.png' 
+import ServiceSingleBox from '../../component/ServiceSingleBox';
 
 
 function Home() {
@@ -122,9 +124,18 @@ function Home() {
 
                     </div>
 
-                  <div className="col-xl-3"></div>
-                  <div className="col-xl-3"></div>
-                  <div className="col-xl-3"></div>
+                  <div className="col-xl-3">
+                    <ServiceSingleBox  title={"Web Development"} des={"Marketing repurpose success in professions whereas in services sapien maximus design."} img={services1} />
+                  </div>
+                  <div className="col-xl-3">
+                  <ServiceSingleBox  title={"Web Development"} des={"Marketing repurpose success in professions whereas in services sapien maximus design."} img={services1} />
+                  </div>
+                  <div className="col-xl-3">
+                  <ServiceSingleBox  title={"Web Development"} des={"Marketing repurpose success in professions whereas in services sapien maximus design."} img={services1} />
+                  </div>
+                  <div className="col-xl-3">
+                  <ServiceSingleBox  title={"Web Development"} des={"Marketing repurpose success in professions whereas in services sapien maximus design."} img={services1} />
+                  </div>
 
                     </div>
                    
