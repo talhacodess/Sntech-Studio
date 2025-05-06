@@ -1,3 +1,26 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+   
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
 .project-single-box {
     margin-bottom: 30px;
 }
@@ -8,9 +31,15 @@
     border-radius: 0 0 20px 20px;
 }
 h3.project-title {
-    margin: 0;
-    line-height: 28px;
+
     font-size: 22px;
+    color: #fefefe;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin: 0;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-bottom: 23px;
 }
 p.project-text {
     display: inline-block;
@@ -41,4 +70,54 @@ p.project-text::before {
 }
 p.project-text:hover::before {
     transform: scale(1);
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 26px !important;
+    border-radius: 50% !important;
+    position: relative;
+    z-index: 1;
+    
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active::before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    right: -50% !important;
+    top: -50%;
+}
+span.swiper-pagination-bullet{
+    background: rgb(255, 61, 0);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 26px !important;
+    border-radius: 50% !important;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    margin-top: 50px !important;
+
+}
+span.swiper-pagination-bullet::before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    right: -50% !important;
+    top: -50%;
+    opacity: 1;
+    
+
+}
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -1px;
 }

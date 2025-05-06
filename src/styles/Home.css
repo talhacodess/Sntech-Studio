@@ -222,6 +222,14 @@ h4.about-title {
     padding: 120px 0 88px;
     background: url('../assets/project-bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+}
+.project{
+    padding: 0 297px 0;
+}
+.faq-area {
+    background: #f4f4f4;
+    padding: 120px 0 120px;
+    position: relative;
+    z-index: 1;
 }

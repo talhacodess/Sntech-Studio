@@ -12,7 +12,8 @@ import aboutus from '../../assets/about-thumb.png'
 import shape from '../../assets/about1.png' 
 import services1 from '../../assets/service1.png' 
 import ServiceSingleBox from '../../component/ServiceSingleBox';
-
+import Project from '../../component/project/Project';
+import Accordion from '../../component/Accordion';
 
 function Home() {
     return (
@@ -142,9 +143,57 @@ function Home() {
                 </div>
             </div>
 
-            {/** Resent Project*/}
+            {/** Recent Project*/}
             <div className='project-area'>
-                
+
+                <div className='row project'>
+                    <div className='col-lg-6'>
+                    <div className='hero-content service-title'>
+                                <h5>SN-Tech Studio</h5>
+                                <h1 style={{color:'#000',fontSize:'42px',fontWeight:'700'}}>Explore Our Recent<br /> <span style={{color:'#de4026'}}>Projects.</span></h1>
+                            </div>
+                    </div>
+                    <div className='col-lg-6'> 
+                        <div className=' border-bottom border-2 py-5'> 
+                        <div class="solutek-btn text-end">
+                                        <a href="/contact">EXPLORE MORE</a>
+                                    </div>
+                                    </div>
+                               </div>
+
+                </div>
+                {/** Project cards */}
+
+                <div className='container-fluid'>
+                    <Project/>
+
+                </div>
+
+
+            </div>
+
+            {/**FAQ area */}
+            <div className='faq-area'>
+
+                <div className="container">
+                    <div className='row'>
+                        <div className='col-lg-12'>
+                        <div className='hero-content text-center service-title'>
+                                <h5>SN-Tech Studio</h5>
+                                <h1 style={{color:'#000',fontSize:'42px',fontWeight:'700'}}>Keeping Your Business
+                                Safe and <span style={{color:'#de4026'}}>Available.</span></h1>
+                                <p className=' mx-auto' style={{color:'#7a7a7a',  fontSize:'16px',width:'400px'}}>Where your interests international networks intersect provid custom software solutions for any value software.</p>
+                               
+
+
+                            </div>
+                        </div>
+                        <div className="col-lg-12">
+                            <Accordion/>
+                        </div>
+                        
+                    </div>
+                </div>
 
             </div>
         </>
