@@ -14,6 +14,7 @@ import services1 from '../../assets/service1.png'
 import ServiceSingleBox from '../../component/ServiceSingleBox';
 import Project from '../../component/project/Project';
 import Accordion from '../../component/Accordion';
+import Reviews from '../../component/reviews/Reviews';
 
 function Home() {
     return (
@@ -192,6 +193,27 @@ function Home() {
                             <Accordion/>
                         </div>
                         
+                    </div>
+                </div>
+
+            </div>
+            {/** Reviews Section */}
+            <div className="review-area">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                        <div className='hero-content text-center service-title'>
+                                <h5>SN-Tech Studio</h5>
+                                <h1 style={{color:'#fff',fontSize:'42px',fontWeight:'700'}}>What Our Customer <span style={{color:'#de4026'}}>Says</span></h1>
+
+                                
+
+                            </div>
+
+                            {/** Reviews */}
+                            <Reviews/>
+
+                        </div>
                     </div>
                 </div>
 
