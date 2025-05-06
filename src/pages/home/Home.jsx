@@ -15,6 +15,8 @@ import ServiceSingleBox from '../../component/ServiceSingleBox';
 import Project from '../../component/project/Project';
 import Accordion from '../../component/Accordion';
 import Reviews from '../../component/reviews/Reviews';
+import { MdArrowOutward } from "react-icons/md";
+
 
 function Home() {
     return (
@@ -216,6 +218,61 @@ function Home() {
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            {/** Contact Area */}
+            <div className="contact-area">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-7">
+                        <div className='hero-content text-start service-title'>
+                                <h5>Contact Us</h5>
+                                <h1 style={{color:'#000',fontSize:'28px',fontWeight:'700',lineHeight:'2.5rem'}}>Make an Online Appoinemnt Booking For <span style={{color:'#de4026'}}> Business Planing</span></h1>
+
+                                
+
+                            </div>
+                            <div className='contact-form-box'>
+                                <form action="">
+                                    <div className="row">
+                                        <div className="col-lg-6">
+                                            <div className='input-box'>
+                                                <input type="text" placeholder='Your Name *'/>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <div className='input-box'>
+                                                <input type="email" placeholder='Your Email *'/>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <div className='input-box'>
+                                                <input type="text" placeholder='Subject *'/>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <div className='input-box'>
+                                                <input type="text" placeholder='Phone *'/>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-12">
+                                            <div className='input-box'>
+                                               <textarea name="" id="" rows={7}></textarea>
+                                            </div>
+                                            <div className="quote_button">
+                                                <button className='btn' type='submit'>Send Now<MdArrowOutward /></button></div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div className="col-lg-6 col-md-5"></div>
+                    </div>
+                </div>
+
+                
 
             </div>
         </>

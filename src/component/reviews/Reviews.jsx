@@ -10,6 +10,7 @@ const reviewData = [
     { text: 'paradigms. Monotonectally extend open-sourcemvia competitive methods of empowerment drirevolutionize stand- business', rating: 4, name: 'Talha Bashir', title: 'Developer', img: reviewt },
     { text: 'paradigms. Monotonectally extend open-sourcemvia competitive methods of empowerment drirevolutionize stand- business', rating: 5, name: 'Sabir', title: 'SEO Specialist', img: reviews },
     { text: 'paradigms. Monotonectally extend open-sourcemvia competitive methods of empowerment drirevolutionize stand- business', rating: 4, name: 'Zeeshan Smith', title: 'Google Ad Expert', img: reviewz },
+    { text: 'paradigms. Monotonectally extend open-sourcemvia competitive methods of empowerment drirevolutionize stand- business', rating: 4, name: 'Zeeshan Smith', title: 'Google Ad Expert', img: reviewz },
 ]
 
 function Reviews() {
