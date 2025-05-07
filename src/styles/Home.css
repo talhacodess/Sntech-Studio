@@ -295,3 +295,6 @@ h4.about-title {
     border-radius: 30px;
     transition: 0.5s;
 }
+.blog-area {
+    padding: 120px 0 89px;
+}

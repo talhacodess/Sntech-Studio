@@ -16,6 +16,7 @@ import Project from '../../component/project/Project';
 import Accordion from '../../component/Accordion';
 import Reviews from '../../component/reviews/Reviews';
 import { MdArrowOutward } from "react-icons/md";
+import Blog from '../../component/blog/Blog';
 
 
 function Home() {
@@ -274,6 +275,32 @@ function Home() {
 
                 
 
+            </div>
+
+            {/**Blog Area */}
+            <div className="blog-area">
+                <div className="container">
+                    <div className="row">
+                    <div className='col-lg-6'>
+                    <div className='hero-content service-title'>
+                                <h5>LATEST NEWS & BLOG</h5>
+                                <h1 style={{color:'#000',fontSize:'42px',fontWeight:'700'}}>Exploring Its Potential in
+                                <br /> <span style={{color:'#de4026'}}>Various Industries.</span></h1>
+                            </div>
+                    </div>
+                    <div className='col-lg-6'> 
+                        <div className=' border-bottom border-2 py-5'> 
+                        <div class="solutek-btn text-end">
+                                        <a href="/contact">VIEW ALL POST</a>
+                                    </div>
+                                    </div>
+                               </div>
+                    </div>
+
+                    <Blog/>
+
+
+                </div>
             </div>
         </>
     )
