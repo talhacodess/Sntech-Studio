@@ -2,6 +2,7 @@ import '../../styles/Project.css'
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -28,13 +29,25 @@ function Project() {
     return (
         <>
             <Swiper
-                slidesPerView={3}
-                spaceBetween={30}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
+               slidesPerView={3}
+               spaceBetween={30}
+               speed={5000}
+               pagination={{ clickable: true }}
+               autoplay={{
+                 delay: 2,
+                 disableOnInteraction: false,
+               }}
+               modules={[Pagination, Autoplay]}
+               className="mySwiper"
+               breakpoints={{
+                 600: { slidesPerView: 1 },
+                 768: { slidesPerView: 2 },
+                 1024: { slidesPerView: 3 },
+               }}
+               touchStartPreventDefault={false} // Important for mobile touch
+               simulateTouch={true}
+
+                
             >
                 {softwareService.map((service, index) => {
                     return (
