@@ -12,6 +12,8 @@ import team7 from '../../assets/team7.png';
 import team8 from '../../assets/team8.png';
 import team9 from '../../assets/team9.png';
 import team10 from '../../assets/team10.png';
+import team11 from '../../assets/team11.png';
+import team12 from '../../assets/team12.png';
 
 
 const Team = () => {
@@ -62,13 +64,16 @@ export default Team;
 const cards = [
   { url: team1, name: "Bilal Ahmad", role: "Manager/Sales", id: 1 },
   { url: team2, name: "Muhammad Kaleem", role: "HR Manager", id: 2 },
+  { url: team12, name: "Rida Batool", role: "Brand Manager", id: 11 },
   { url: team3, name: "Talha Bashir", role: "Web Developer", id: 3 },
   { url: team4, name: "Qadeer Abbas", role: "Product Designer", id: 4 },
+  { url: team11, name: "Umra Jawed", role: "Creative Writer", id: 12 },
   { url: team5, name: "Zeeshan", role: "Marketing Head", id: 5 },
   { url: team6, name: "Sabir Ishtiaq", role: "Manager/IT", id: 6 },
   { url: team7, name: "Muhammad Mudasir", role: "Graphic Designer", id: 7 },
   { url: team8, name: "Dilshad Khan", role: "SEO Specialist", id: 8 },
   { url: team9, name: "Ghulam Mustafa", role: "Full Stack Web developer", id: 9 },
   { url: team10, name: "Ubaid-ul-Rehman", role: "Sales Executive", id: 10 },
-
+  
+  
 ];
