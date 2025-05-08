@@ -29,7 +29,6 @@ function Project() {
     return (
         <>
             <Swiper
-               slidesPerView={3}
                spaceBetween={30}
                speed={5000}
                pagination={{ clickable: true }}
@@ -39,6 +38,7 @@ function Project() {
                }}
                modules={[Pagination, Autoplay]}
                className="mySwiper"
+               slidesPerView='auto'
                breakpoints={{
                  600: { slidesPerView: 1 },
                  768: { slidesPerView: 2 },

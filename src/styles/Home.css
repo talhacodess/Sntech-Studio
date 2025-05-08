@@ -223,7 +223,7 @@ h4.about-title {
 }
 
 .project-area {
-    padding: 120px 0 88px;
+    padding: 120px 0 40px;
     background: url('../assets/project-bg.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -303,7 +303,15 @@ h4.about-title {
     padding: 120px 0 89px;
     
 }
-
+.team-title{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.team-area{
+    padding-top: 100px;
+    background-color: #f4f4f4;
+}
 @media only screen and  (max-width:600px) {
     .my-navbar {
         padding: 5px 10px 20px;
@@ -364,5 +372,23 @@ h4.about-title {
     }
     .project{
         padding: 0 10px 0;
+    }
+    h2.team-title.text-center{
+        font-size: 40px;
+    }
+    .review-area{
+        margin: 0 10px;
+    }
+    p.review-text{
+        font-size: 15px;
+    }
+    .contact-area {
+        background-position: left center;
+    }
+    .meta-blog p {
+        margin-left: 0px;
+    }
+    .blog-box-content h3 a {
+        font-size: 20px !important;
     }
 }

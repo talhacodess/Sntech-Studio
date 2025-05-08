@@ -17,10 +17,15 @@ function Reviews() {
     return (
         <>
             <Swiper
-                slidesPerView={3}
                 spaceBetween={30}
                
                 className="mySwiper"
+                slidesPerView='auto'
+               breakpoints={{
+                 600: { slidesPerView: 1 },
+                 768: { slidesPerView: 2 },
+                 1024: { slidesPerView: 3 },
+               }}
             >
                 {reviewData.map((review, index) => {
                     return (

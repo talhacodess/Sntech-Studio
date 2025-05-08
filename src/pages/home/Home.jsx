@@ -181,16 +181,16 @@ function Home() {
             </div>
 
             {/**FAQ area */}
-            <div className='faq-area d-none'>
+            <div className='faq-area '>
 
                 <div className="container">
                     <div className='row'>
                         <div className='col-lg-12'>
                         <div className='hero-content text-center service-title'>
                                 <h5>SN-Tech Studio</h5>
-                                <h1 style={{color:'#000',fontSize:'42px',fontWeight:'700'}}>Keeping Your Business
+                                <h1 className='about-h1'>Keeping Your Business
                                 Safe and <span style={{color:'#de4026'}}>Available.</span></h1>
-                                <p className=' mx-auto' style={{color:'#7a7a7a',  fontSize:'16px',width:'400px'}}>Where your interests international networks intersect provid custom software solutions for any value software.</p>
+                                <p className=' mx-auto' style={{color:'#7a7a7a',  fontSize:'16px' ,textAlign:'center'}}>Where your interests international networks intersect provid custom software solutions for any value software.</p>
                                
 
 
@@ -205,17 +205,18 @@ function Home() {
 
             </div>
             {/** Reviews Section */}
-            <div className="review-area d-none">
+            <div className="review-area ">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                         <div className='hero-content text-center service-title'>
                                 <h5>SN-Tech Studio</h5>
-                                <h1 style={{color:'#fff',fontSize:'42px',fontWeight:'700'}}>What Our Customer <span style={{color:'#de4026'}}>Says</span></h1>
+                                <h1 className='about-h1 text-white'>What Our Customer <span style={{color:'#de4026'}}>Says</span></h1>
 
                                 
 
                             </div>
+                            
 
                             {/** Reviews */}
                             <Reviews/>
@@ -226,14 +227,25 @@ function Home() {
 
             </div>
 
+               {/**Team Area */}
+
+               <div className='team-area'>
+                <div className="container">
+                    <h2 className='team-title text-center'>The Team</h2>
+                </div>
+                <div className="container-fluid">
+                    <Team/>
+                </div>
+            </div>
+
             {/** Contact Area */}
-            <div className="contact-area d-none">
+                <div className="contact-area">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-7">
                         <div className='hero-content text-start service-title'>
                                 <h5>Contact Us</h5>
-                                <h1 style={{color:'#000',fontSize:'28px',fontWeight:'700',lineHeight:'2.5rem'}}>Make an Online Appoinemnt Booking For <span style={{color:'#de4026'}}> Business Planing</span></h1>
+                                <h1 className='about-h1'>Make an Online Appoinemnt Booking For <span style={{color:'#de4026'}}> Business Planing</span></h1>
 
                                 
 
@@ -282,14 +294,14 @@ function Home() {
             </div>
 
             {/**Blog Area */}
-            <div className="blog-area d-none">
+            <div className="blog-area ">
                 <div className="container">
                     <div className="row">
                     <div className='col-lg-6'>
                     <div className='hero-content service-title'>
                                 <h5>LATEST NEWS & BLOG</h5>
-                                <h1 style={{color:'#000',fontSize:'42px',fontWeight:'700'}}>Exploring Its Potential in
-                                <br /> <span style={{color:'#de4026'}}>Various Industries.</span></h1>
+                                <h1 className='about-h1'>Exploring Its Potential in
+                                 <span style={{color:'#de4026'}}>Various Industries.</span></h1>
                             </div>
                     </div>
                     <div className='col-lg-6'> 
@@ -306,12 +318,7 @@ function Home() {
 
                 </div>
             </div>
-
-            <div className='team-area'>
-                <div className="container">
-                    <Team/>
-                </div>
-            </div>
+         
         </>
     )
 

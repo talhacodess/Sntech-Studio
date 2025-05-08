@@ -1,10 +1,3 @@
-.bg-neutral-800 {
-    background-color: #262626; /* Tailwind's neutral-800 */
-  }
-  
-  .bg-neutral-900 {
-    background-color: #171717; /* Tailwind's neutral-900 */
-  }
   
   .text-neutral-500 {
     color: #737373; /* Tailwind's neutral-500 */
@@ -142,75 +135,83 @@
     backdrop-filter: blur(1rem);
   }
 
-  .team-card {
+  .team-section {
     position: relative;
+    height: 300vh;
+  }
+  
+  .team-scroll-container {
+    position: sticky;
+    top: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    height: 100vh;
     align-items: center;
-    height: 400px;
-    width: 280px;
-    border-radius: 1rem;
     overflow: hidden;
-    background-color: white;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 0 2rem;
+  }
+  
+  .team-cards-wrapper {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  /* Base card style */
+  .team-card {
+    flex: 0 0 22vw; /* Show 4 cards on desktop */
+    height: 60vh;
+    border-radius: 1rem;  
+    background-color: #ffffff; /* Default white */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
   }
   
-  .team-card:hover {
-    transform: scale(1.05);
+  /* Alternating green background on even cards */
+  .team-card:nth-child(even) {
+    background-color: #ff4417; /* Bright green like your example */
   }
   
+
   .team-card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
+    width: 400px;
+   height: 650px;
+   object-fit: cover;
+
+    transition: transform 0.3s ease;
     z-index: 0;
+    transform: translateY(-130px);
   }
   
-  .group:hover .team-card-image {
-    filter: grayscale(0%);
+  .team-card:hover .team-card-image {
+    transform: translateY(-150px)
   }
   
-  .team-card-gradient {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40%;
-    background: linear-gradient(to top, rgba(23, 23, 23, 0.9), rgba(23, 23, 23, 0.7), transparent);
-    z-index: 1;
-  }
   
-  .team-card-text {
-    position: absolute;
-    bottom: 1.25rem; /* 20px */
-    left: 1.25rem;
-    z-index: 2;
-    color: white;
-  }
-  
-  .team-card-text h2 {
+  .team-card h2 {
     font-size: 1.25rem;
-    font-weight: bold;
-    margin: 0;
+    font-weight: 700;
+    margin-top: -170px;
+    margin-left: 20px;
   }
   
-  .team-card-text p {
+  .team-card p {
+    margin-left: 20px;
     font-size: 0.875rem;
-    opacity: 0.8;
-    margin: 0;
+    color: #333;
+
   }
   
-  .team-card-border {
-    position: absolute;
-    inset: 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
-    pointer-events: none;
-    z-index: 1;
-  }
   
+  /* Responsive: 2 cards on tablets */
+  /* @media (max-width: 1024px) {
+    .team-card {
+      flex: 0 0 45vw;
+    }
+  }
+   */
+  /* Responsive: 1 card on mobile */
+  /* @media (max-width: 640px) {
+    .team-card {
+      flex: 0 0 90vw;
+    }
+  } */
   
