@@ -179,6 +179,16 @@ function Home() {
 
 
             </div>
+               {/**Team Area */}
+
+               <div className='team-area'>
+                <div className="container">
+                    <h2 className='team-title text-center'>The Team</h2>
+                </div>
+                <div className="container-fluid">
+                    <Team/>
+                </div>
+            </div>
 
             {/**FAQ area */}
             <div className='faq-area '>
@@ -227,16 +237,7 @@ function Home() {
 
             </div>
 
-               {/**Team Area */}
-
-               <div className='team-area'>
-                <div className="container">
-                    <h2 className='team-title text-center'>The Team</h2>
-                </div>
-                <div className="container-fluid">
-                    <Team/>
-                </div>
-            </div>
+            
 
             {/** Contact Area */}
                 <div className="contact-area">
