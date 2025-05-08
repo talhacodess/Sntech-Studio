@@ -1,4 +1,4 @@
-import Header from './header/header'
+import Header from './header/Header.jsx'
 import Footer from './footer/Footer'
 import Home from './pages/home/Home'
 import { Route, Routes } from 'react-router'
