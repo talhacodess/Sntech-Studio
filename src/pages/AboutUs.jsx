@@ -35,7 +35,7 @@ function AboutUs() {
     </div>
 
      {/* About area */}
-                <div className='about-area'>
+                <div className='about-area '>
                     <div className='container'>
                         <div className='row align-items-center'>
                             <div className='col-lg-6'>
@@ -69,8 +69,8 @@ function AboutUs() {
 
                   {/** Recent Project*/}
                             <div className='project-area '>
-                
-                                <div className='row project'>
+                                <div className="container">
+                                      <div className='row '>
                                     <div className='col-lg-6 col-md-12 col-sm-12'>
                                     <div className='hero-content service-title'>
                                                 <h5>Our Projects</h5>
@@ -86,6 +86,10 @@ function AboutUs() {
                                                </div>
                 
                                 </div>
+
+                                </div>
+                
+                              
                                 {/** Project cards */}
                 
                                 <div className='container-fluid '>
