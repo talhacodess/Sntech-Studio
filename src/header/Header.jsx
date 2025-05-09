@@ -18,10 +18,10 @@ function Header() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         <Link to={"/"}> <a class="nav-link active" aria-current="page" href="#">Home</a></Link>
+         <Link to={"/"} class="nav-link active" aria-current="page" >Home</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+         <Link to={'/about-us'} class="nav-link">About Us</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Portfolio</a>

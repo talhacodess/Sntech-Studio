@@ -1,0 +1,65 @@
+.breadcrumb-area.about{
+    padding: 170px 0 180px;
+}
+.breadcrumb-area{
+    background-image: url('../assets/about-banner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.breadcrumb-content h4{
+    font-size: 55px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+.breadcrumb-list{
+    display: inline-block;
+    margin-top: 24px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #161a2b;
+
+}
+.breadcrumb-content ul li{
+    display: inline-block;
+    margin: 0 6px;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ff3b00;
+    font-weight: 500;
+}
+.list-arrow{
+    color: #fff !important;
+}
+.breadcrumb-list .home{
+    color: #fff !important;
+}
+/* Media query for mobile screen*/
+@media only screen and (max-width:600px){
+    .breadcrumb-content h4{
+        font-size: 25px !important;
+    }
+    .breadcrumb-area.about{
+        padding: 40px 0 20px !important;
+    }
+    .breadcrumb-list {
+        margin-top: 5px;
+        padding: 4px 5px;
+    }
+    .breadcrumb-content ul li{
+        font-size: 10px !important;
+    }
+}
+
+
+/* Media Query for tab view*/
+
+@media only screen and (max-width:768px){
+    .breadcrumb-area.about {
+    padding: 40px 0 80px;
+}
+}
