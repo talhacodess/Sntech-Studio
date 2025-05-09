@@ -27,7 +27,7 @@ function Header() {
           <a class="nav-link" href="#">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Service</a>
+           <Link to={'/services'} class="nav-link">Services</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
