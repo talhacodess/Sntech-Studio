@@ -1,0 +1,91 @@
+
+/* Portfolio wrapper */
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Filter button container */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Filter buttons */
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #ffffffcc;
+  border: 2px solid #ff3b00;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background-color: rgba(255, 59, 0, 0.1);
+}
+
+.filter-btn.active {
+  background-color: #ff3b00;
+  color: #05091d;
+  border-color: #ff3b00;
+}
+
+/* Items grid */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Card styling */
+.card {
+  background-color: #0d112a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(255, 59, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(0.9);
+   transform: scale(1);
+   transition: 0.3s all;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1rem;
+ background-color: #05091d;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #ff3b00;
+}
+
+button.filter-btn {
+    color: #000;
+}

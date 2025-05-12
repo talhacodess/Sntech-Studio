@@ -1,40 +1,53 @@
-import React, { useState } from 'react'
-import { items } from './items'
-import { button, div, filter } from 'motion/react-client'
+import React, { useEffect, useState } from 'react';
+import { items } from './items';
+import '../../styles/PortfolioFilters.css';
 
 function PortfolioFilters() {
-    const [selectedFilters,setSelectedFilters] = useState()
-    const [filterItems,setFilterItems] = useState((items))
-    console.log(items,'items',)
-    let filters = ['Technology','Help Desk','Analysis','Marketing']
+  const [selectedFilter, setSelectedFilter] = useState('All');
+  const [filteredItems, setFilteredItems] = useState(items);
+
+  const handleFilterBtnClick = (category) => {
+    setSelectedFilter(category);
+  };
+
+  useEffect(() => {
+    if (selectedFilter === 'All') {
+      setFilteredItems(items);
+    } else {
+      const filtered = items.filter(item => item.category === selectedFilter);
+      setFilteredItems(filtered);
+    }
+  }, [selectedFilter]);
+
+  const filters = ['All', 'Technology', 'Help Desk', 'Analysis', 'Marketing'];
+
   return (
-    <>
-    <div className="btn-container">
-        {filters.map((category,index)=>(
-            <button
-            onClick={()=>handleFilterBtnclick(category)}
-            className={`button ${selectedFilters?.includes(category) ?'active':''}`}
+    <div className="portfolio">
+      <div className="filters">
+        {filters.map((category, index) => (
+          <button
             key={`filters-${index}`}
-            >{category}</button>
+            onClick={() => handleFilterBtnClick(category)}
+            className={`filter-btn ${selectedFilter === category ? 'active' : ''}`}
+          >
+            {category}
+          </button>
         ))}
+      </div>
 
-
-    </div>
-
-    <div className="item-container">
-        {filterItems.map((item,index)=>(
-            <div key={`item-${index}`} className='item'>
-                <img src={item.url} alt="" />
-                <h2>{item.name}</h2>
-                <p>{item.category}</p>
+      <div className="items">
+        {filteredItems.map((item, index) => (
+          <div key={`item-${index}`} className="card">
+            <img src={item.url} alt={item.name} />
+            <div className="card-content">
+              <h2>{item.name}</h2>
+              <p>{item.category}</p>
             </div>
+          </div>
         ))}
-
+      </div>
     </div>
-   
-    </>
- 
-  )
+  );
 }
 
-export default PortfolioFilters
+export default PortfolioFilters;
