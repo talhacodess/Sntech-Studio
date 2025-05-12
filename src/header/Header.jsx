@@ -30,10 +30,10 @@ function Header() {
            <Link to={'/services'} class="nav-link">Services</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <Link to={'/blog'} class="nav-link">Blog</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+         <Link to={'/contact'} class="nav-link">Contact</Link>
         </li>
        
        
