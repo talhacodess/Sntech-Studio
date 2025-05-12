@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs.jsx'
 import Services from './pages/Services.jsx'
 import BlogPage from './pages/BlogPage.jsx'
 import ContactUs from './pages/ContactUs.jsx'
+import PortfolioPage from './pages/PortfolioPage.jsx'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/services' element={<Services/>} />
         <Route path='/blog' element={<BlogPage/>} />
         <Route path='/contact' element={<ContactUs/>} />
+        <Route path='/portfolio' element={<PortfolioPage/>} />
      
        </Routes>
    
