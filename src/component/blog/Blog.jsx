@@ -8,13 +8,13 @@ import { FaRegUser } from "react-icons/fa";
 import { FaRegCommentDots } from "react-icons/fa6";
 
 
-const blogData = [
+export const blogData = [
     {
         category:'Web Developer',
         img:img1,
         adminName:'Talha Bashir',
         title:'Regional Manager limited time management.',
-        btnUrl:'#'
+        btnUrl:'/blog-detail'
     },
     {
         category:'SEO Specialist',

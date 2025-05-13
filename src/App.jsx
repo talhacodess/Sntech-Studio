@@ -7,6 +7,7 @@ import Services from './pages/Services.jsx'
 import BlogPage from './pages/BlogPage.jsx'
 import ContactUs from './pages/ContactUs.jsx'
 import PortfolioPage from './pages/PortfolioPage.jsx'
+import BlogDetial from './pages/blog/BlogDetial.jsx'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/about-us' element={<AboutUs/>} />
         <Route path='/services' element={<Services/>} />
         <Route path='/blog' element={<BlogPage/>} />
+        <Route path='/blog-detail' element={<BlogDetial/>} />
         <Route path='/contact' element={<ContactUs/>} />
         <Route path='/portfolio' element={<PortfolioPage/>} />
      

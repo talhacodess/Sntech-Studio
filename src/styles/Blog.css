@@ -123,3 +123,198 @@
     }
     
 }
+
+.blog-detail-thumb{
+    overflow: hidden;
+}
+.blog-detail-thumb img{
+    width: 100%;
+    transform: scale(1);
+    transition: .3s all;
+}
+.blog-detail-thumb:hover img{
+    transform: scale(1.1);
+}   
+
+.meta-blog span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #7a7a7a;
+
+}
+.blog-detail-content{
+    padding: 27px 36px 20px;
+    border: 1px solid #2222;
+
+}
+.blog-details-title {
+    font-size: 32px;
+    margin: 12px 0 19px;
+    font-weight: 700;
+}
+.blog-details-desc {
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+ul.detail-list{
+    list-style: none;
+    padding: 0;
+    
+}
+
+ul.detail-list li {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><circle cx='256' cy='256' r='256' fill='%23ff4500'/><path fill='white' d='M208 336l-72-72 24-24 48 48 96-96 24 24z'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 0 0.2em;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.blog-detail-category span a.active-class{
+    background: #ff3b00;
+    color: #fff;
+}
+.blog-detail-category span a {
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 6px 16px;
+    font-weight: 500;
+    color: #001819;
+    border-radius: 3px;
+    margin-right: 7px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.blog-details-social-icon{
+    text-align: right;
+}
+.blog-details-social-icon ul li{
+    display: inline-block;
+}
+.blog-details-social-icon ul li {
+    background-color: #ff3b00;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+}
+.blog-details-social-icon ul li:nth-child(2){
+    background-color: #00aff5;
+}
+.blog-details-social-icon ul li:nth-child(3){
+    background-color: #000;
+}
+.blog-details-social-icon ul li:nth-child(4){
+    background-color: #b7071c;
+}
+.blog-details-socila-box {
+    border: 1px solid #2222;
+    border-top: transparent;
+    padding: 19px 35px 18px;
+    border-radius: 0 0 5px 5px;
+}
+.single-comment-area {
+    background: #f4f4f4;
+    padding: 49px 41px 56px;
+    margin-top: 61px;
+    border-radius: 5px;
+}
+.blog-details-comment-title h4 {
+    font-size: 28px;
+    margin: 0 0 28px;
+}
+.blog-details-comment {
+    margin-bottom: 19px;
+    position: relative;
+    border: 1px solid #22222214;
+    padding: 29px 29px 25px;
+}
+.blog-details-comment-reply a {
+    background: #ff3b00;
+    padding: 3px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+}
+.blog-details-comment-reply{
+    position: absolute;
+    right: 20px;
+}
+.blog-details-comment-thumb {
+    float: left;
+    margin-right: 30px;
+}
+.blog-details-comment-content {
+    overflow: hidden;
+}
+.blog-details-contact-title h4 {
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 31px;
+}
+.contact-input-box input {
+    background: #fff;
+    border: transparent;
+    width: 100%;
+    height: 60px;
+    padding: 22px;
+    outline: 0;
+    margin-bottom: 11px;
+}
+.contact-input-box textarea{
+     background: #fff;
+    border: transparent;
+    width: 100%;
+    padding: 22px;
+    outline: 0;
+    margin-bottom: 11px;
+
+}
+.blog-details-submi-button button {
+    background: #ff3b00;
+    color: #fff;
+    text-transform: uppercase;
+    border: transparent;
+    padding: 12px 26px;
+    font-size: 15px;
+    margin-top: 34px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    border: 2px solid #ff3b00;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.blog-details-submi-button button:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -1;
+    border-radius: 5px;
+}
+.blog-details-submi-button button:hover {
+    color: #ff3b00 ;
+}
+.blog-details-submi-button button:hover:before {
+    width: 100%;
+    left: 0;
+}
+.input-check-box span {
+    font-size: 15px;
+    margin-left: 7px;
+    color: #7a7a7a;
+}
