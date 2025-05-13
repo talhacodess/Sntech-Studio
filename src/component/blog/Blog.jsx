@@ -9,24 +9,28 @@ import { FaRegCommentDots } from "react-icons/fa6";
 
 
 export const blogData = [
+
     {
+        id: '1',
         category:'Web Developer',
         img:img1,
-        adminName:'Talha Bashir',
+        author:'Talha Bashir',
         title:'Regional Manager limited time management.',
         btnUrl:'/blog-detail'
     },
     {
+        id: '2',
         category:'SEO Specialist',
         img:img2,
-        adminName:'Sabir Clark',
+        author:'Sabir Clark',
         title:'The Complete Guide to Tekone App Development',
         btnUrl:'#'
     },
     {
+        id: '3',
         category:'Graphic Designer',
         img:img3,
-        adminName:'Mudasir Chamkila',
+        author:'Mudasir Chamkila',
         title:'Easy and Most Powerful Server and Platform.',
         btnUrl:'#'
     },
@@ -41,17 +45,17 @@ function Blog() {
                 <div className="single-blog-thumb">
                     <img src={blog.img} alt="" />
                     <div className='blog-meta-top'>
-                        <Link to={blog.btnUrl}>{blog.category}</Link>
+                        <Link to={`/blog-detail/${blog.id}`}>{blog.category}</Link>
                     </div>
                 </div>
                 <div className="blog-box-content">
                     <div className="meta-blog">
-                        <Link to={blog.btnUrl}><span><FaRegUser size={35} />{blog.adminName}</span></Link>
+                        <Link to={`/blog-detail/${blog.id}`}><span><FaRegUser size={35} />{blog.adminName}</span></Link>
                         <p><span><FaRegCommentDots size={35}  /></span>COMMENTS</p>
                     </div>
-                    <h3><Link to={blog.btnUrl}>{blog.title}</Link></h3>
+                    <h3><Link to={`/blog-detail/${blog.id}`}>{blog.title}</Link></h3>
                     <div className="blog-btn">
-                        <Link to={blog.btnUrl}>Read Post</Link>
+                        <Link to={`/blog-detail/${blog.id}`}>Read Post</Link>
                     </div>
                 </div>
 

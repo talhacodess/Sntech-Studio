@@ -12,6 +12,10 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { GrLinkedinOption } from "react-icons/gr";
 import { PiPinterestLogoBold } from "react-icons/pi";
 import comimg from '../../assets/test.png'
+import { useParams } from 'react-router';
+import { useEffect,useState } from 'react';
+import axios from 'axios';
+
 
 
 
@@ -22,6 +26,17 @@ import comimg from '../../assets/test.png'
 
 
 function BlogDetial() {
+
+    const {id} = useParams();
+    const [blog,setBlog] = useState(null);
+    useEffect(()=>{
+        axios.get(`http://localhost:5000/api/blogs/${id}`)
+        .then(res => setBlog(res.data))
+        .catch(err => console.log('error fetching blog:',err));
+    },[id])
+    if(!blog) return <p>Loading Blog...</p>
+    console.log(blog,'blog data');
+    
   return (
    <>
     {/** breadbrumb area */}
@@ -53,16 +68,16 @@ function BlogDetial() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="blog-detail-thumb">
-                                <img src={img} alt="" />
+                                <img src={blog.img} alt="" />
                             </div>
                             <div className="blog-detail-content">
                                 <div className="meta-blog">
-                                    <span><FaRegUser size={40} />Author</span> 
+                                    <span><FaRegUser size={40} />{blog.author}</span> 
                                     <span><SlCalender size={40} />5 jnuary,2025</span> 
-                                    <span><IoFolderOpenOutline size={40} />Category</span> 
+                                    <span><IoFolderOpenOutline size={40} />{blog.category}</span> 
 
                                 </div>
-                                <h4 className="blog-details-title">Solution This Business For is Marketing Blog</h4>
+                                <h4 className="blog-details-title">{blog.title}</h4>
                                 <p className='blog-details-desc'>Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities before user-centric Credibly implement exceptional</p>
                                 <p className='blog-details-desc'>Alternative innovation to ethical network environmental whiteboard pursue compelling results for methods empowerment. Dramatically architect go forward opportunities before user-centric Credibly implement exceptional</p>
                                  <h4 className="blog-details-title">Our Begin Now To Beingonl</h4>
